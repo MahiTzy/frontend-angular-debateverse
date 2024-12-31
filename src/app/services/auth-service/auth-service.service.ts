@@ -18,19 +18,17 @@ export class AuthServiceService {
 
   isLoggedIn$ = this.loggedIn$.asObservable();
 
-  baseUrl: String = "https://backend-springboot-debateverse.onrender.com";
-
   register(user: any) {
-    return this._http.post(`${this.baseUrl}`, user);
+    return this._http.post('https://backend-springboot-debateverse.onrender.com/auth/register', user);
   }
 
   login(user: any) {
-    return this._http.post(`${this.baseUrl}/auth/generate-token`, user);
+    return this._http.post('https://backend-springboot-debateverse.onrender.com/auth/generate-token', user);
   }
 
   forgotPassword(email: string) {
     return this._http
-      .post(`${this.baseUrl}/auth/forgot-password`, null, {
+      .post('https://backend-springboot-debateverse.onrender.com/auth/forgot-password', null, {
         params: { email },
       })
       .subscribe({
@@ -56,18 +54,18 @@ export class AuthServiceService {
 
   validateResetToken(token: string): Observable<any> {
     return this._http.get(
-      `${this.baseUrl}/auth/reset-password?token=${token}`
+      `https://backend-springboot-debateverse.onrender.com/auth/reset-password?token=${token}`
     );
   }
 
   validateEmailToken(token: string): Observable<any> {
     return this._http.get(
-      `${this.baseUrl}/auth/verify-email?token=${token}`
+      `https://backend-springboot-debateverse.onrender.com/auth/verify-email?token=${token}`
     );
   }
 
   resetPassword(newPassword: string, token: string) {
-    return this._http.post(`${this.baseUrl}/auth/reset-password`, null, {
+    return this._http.post('https://backend-springboot-debateverse.onrender.com/auth/reset-password', null, {
       params: {
         token,
         newPassword,
@@ -76,7 +74,7 @@ export class AuthServiceService {
   }
   fetchUser(userId: any) {
     return this._http
-      .get(`${this.baseUrl}/auth/get-user`, {
+      .get('https://backend-springboot-debateverse.onrender.com/auth/get-user', {
         params: { userId },
       })
       .pipe(

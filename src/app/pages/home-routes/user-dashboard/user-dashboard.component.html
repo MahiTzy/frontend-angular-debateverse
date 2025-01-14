@@ -1,0 +1,86 @@
+<div class="min-h-full bg-gray-100">
+  <main>
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+      <div class="md:flex">
+        <ul
+          class="flex flex-col space-y-4 text-base font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0 w-full md:w-1/5">
+          <!-- Dashboard Link with Icon -->
+          <li>
+            <a href="#" routerLink="/user/dashboard"
+              routerLinkActive="text-blue-700 bg-blue-100 dark:bg-gray-800 dark:text-white"
+              class="gap-2 inline-flex items-center px-6 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="currentColor">
+                <path
+                  d="M120-520v-320h320v320H120Zm0 400v-320h320v320H120Zm400-400v-320h320v320H520Zm0 400v-320h320v320H520ZM200-600h160v-160H200v160Zm400 0h160v-160H600v160Zm0 400h160v-160H600v160Zm-400 0h160v-160H200v160Zm400-400Zm0 240Zm-240 0Zm0-240Z" />
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <!-- My Debates Link with Icon -->
+          <li>
+            <a href="#" routerLink="/user/debates"
+              routerLinkActive="text-blue-700 bg-blue-100 dark:bg-gray-800 dark:text-white"
+              class="gap-2 inline-flex items-center px-6 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="currentColor">
+                <path
+                  d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z" />
+              </svg>
+              <span>My Debates</span>
+            </a>
+          </li>
+
+          <!-- Liked Debates Link with Icon -->
+          <li>
+            <a href="#" routerLink="/user/liked-debates"
+              routerLinkActive="text-blue-700 bg-blue-100 dark:bg-gray-800 dark:text-white"
+              class="gap-2 inline-flex items-center px-6 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="currentColor">
+                <path
+                  d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z" />
+              </svg>
+              <span>Liked Debates</span>
+            </a>
+          </li>
+
+          <!-- Disliked Debates Link with Icon -->
+          <li>
+            <a href="#" routerLink="/user/disliked-debates"
+              routerLinkActive="text-blue-700 bg-blue-100 dark:bg-gray-800 dark:text-white"
+              class="gap-2 inline-flex items-center px-6 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="currentColor">
+                <path
+                  d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z" />
+              </svg>
+              <span>Disliked Debates</span>
+            </a>
+          </li>
+
+          <!-- Create Debate Link with Icon -->
+          <li>
+            <a href="#" routerLink="/user/create-debate"
+              routerLinkActive="text-blue-700 bg-blue-100 dark:bg-gray-800 dark:text-white"
+              class="gap-2 inline-flex items-center px-6 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="currentColor">
+                <path
+                  d="M520-400h80v-120h120v-80H600v-120h-80v120H400v80h120v120ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
+              </svg>
+              <span>Create Debate</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Content Area -->
+        <div
+          class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full md:w-3/4 shadow-lg">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

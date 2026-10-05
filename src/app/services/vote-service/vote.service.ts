@@ -8,7 +8,7 @@ export class VoteService {
 
   constructor(private _http:HttpClient) { }
 
-  baseUrl: string = 'http://localhost:8080/api/votes';
+  baseUrl: string = 'https://test.hackshack.me/api/votes';
 
   getVotesByUser(userId: any, debateId: any) {
     return this._http.get(`${this.baseUrl}/${userId}/${debateId}`);

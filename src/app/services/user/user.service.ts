@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(private _http:HttpClient) { }
 
-  baseUrl:string = "http://localhost:8080/api/user";
+  baseUrl:string = "https://test.hackshack.me/api/user";
 
   getAllUsers(){
     return this._http.get(`${this.baseUrl}/all`);

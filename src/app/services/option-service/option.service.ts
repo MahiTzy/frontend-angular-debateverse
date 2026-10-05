@@ -8,7 +8,7 @@ export class OptionService {
 
   constructor(private _http:HttpClient) { }
 
-  baseUrl:string = "http://localhost:8080/api/options";
+  baseUrl:string = "https://test.hackshack.me/api/options";
 
   blockOption(optionId:any, debateId:any){
     return this._http.put(`${this.baseUrl}/block/${debateId}/${optionId}`, {}, {responseType: 'text'});

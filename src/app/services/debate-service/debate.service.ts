@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class DebateService {
   constructor(private _http: HttpClient) {}
 
-  baseUrl: string = 'http://localhost:8080/api/debates';
+  baseUrl: string = 'https://test.hackshack.me/api/debates';
 
   getPublicDebates() {
     return this._http.get(`${this.baseUrl}/public`);
